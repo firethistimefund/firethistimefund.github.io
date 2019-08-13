@@ -1,0 +1,991 @@
+#gallery {
+	position:relative;
+	height:360px
+}
+	#gallery a {
+		float:left;
+		position:absolute;
+	}
+	
+	#gallery a img {
+		width: 250px;
+		float: left;
+		display: inline-block;
+		border:none;
+	}
+	
+	#gallery a.show {
+		z-index:500
+	}
+
+	#gallery .caption {
+		float: right;
+		z-index:600; 
+		background-color:#000; 
+		color:#ffffff;
+		bottom:0;
+	}
+
+	#gallery .caption .content {
+		margin:5px
+	}
+	
+	#gallery .caption .content h3 {
+		margin:0;
+		padding:0;
+		color:#1DCCEF;
+	}
+
+.img {
+		padding-bottom: 15px;
+		padding-right: 15px;
+		float: left;
+		max-width: 350px;
+		display: inline-block;
+		border:none;
+}
+body {
+	background-repeat: repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/bg-tile.png');
+	margin: 0 auto;
+}
+
+h1 {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: serif;
+	line-height: 250px;
+	font-size: 140px; 
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 170px;
+	overflow: hidden;
+	padding-left: 0px;
+	z-index: 25;
+	position: relative;
+	width: 460px;
+}
+
+h1 a {
+	color: #7f6233;
+	text-decoration: none;
+	letter-spacing: -10px;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	margin-top: -45px;
+	-webkit-transition: color 0.25s linear;
+}
+
+h1 a:active {
+	color: #cc8514;
+}
+
+h1 a small {
+	display: inline-block;
+	text-align: right;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-size: 36px;
+}
+
+h1 a em {
+	display: block;
+	font-size: 48px;
+	line-height: 130px; 
+	text-transform: lowercase; 
+	font-style: italic;
+		color: rgb(14, 32, 59); 
+	color: rgba(14, 32, 59, .75);	letter-spacing: 0;
+	position: absolute;
+	width: 460px;
+	top: 50px;
+	left: 0;
+	text-align: right;
+	-webkit-transition: color 0.25s linear;
+	-moz-transition: color 0.25s linear;
+}
+
+h1 a:hover em,
+h1 a:focus em {
+
+	color: rgb(14, 32, 59); 
+	color: #878f98;
+
+}
+
+h1 a:active em {
+	color: rgb(14, 32, 59); 
+	color: rgba(14, 32, 59, .5);
+}
+
+h1 a:hover {
+	color: #eaca37;
+}
+
+h2 {
+
+	font-size: 1.1em;
+
+	line-height: 1.2em;
+
+}
+
+h2#title span.quote {
+	font-family: m-1c-1, Arial;
+	color: #9f8658;
+	line-height: 1.4em;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.8em !important;
+}
+
+h2#title {
+	font-style: normal;
+	font-weight: normal;
+	width: 440px;
+	float: right;
+	display: inline-block;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 40px;
+	margin-top: 30px;
+	color: #7f6233;
+	text-transform: none;
+	font-family: Arial;
+	font-size: 1.2em;
+}
+
+h2#title a {
+	text-decoration: none;
+	color: #3b6eaf;
+}
+
+h2#title a:hover {
+	text-decoration: underline;
+	color: #ed3c2c;
+}
+
+div#nav {
+	background-color: #878f98;
+	border-width: 4px;
+	border-color: #586172;
+	border-style: double;
+}
+
+div#nav ul {
+	padding: 0px;
+	list-style-position: outside;
+	margin: 0px;
+	list-style-type: none;
+}
+
+div#nav li {
+	font-family: "Times New Roman";
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	list-style-position: outside;
+}
+
+div#nav li a {
+	padding: 10px;
+	display: block;
+	color: #eadd2a;
+	text-decoration: none;
+}
+
+div#nav li a:hover {
+	color: #333333;
+}
+
+div#nav li a em {
+	padding-bottom: 5px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 0.7em;
+	font-family: Arial;
+	color: white;
+	display: block;
+}
+
+div#sidebar li a {
+	color: #ed3c2c;
+	text-decoration: none;
+}
+
+div#sidebar li a:hover {
+	color: #333333;
+}
+
+div#sidebar li a em {
+	padding-bottom: 5px;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-size: 0.7em;
+	font-family: Arial;
+	color: white;
+	display: block;
+}
+
+
+
+div#nav li#apply {
+	background-color: #c12123;
+}
+
+div#deadline {
+	color: #bf4757;
+	font-family: Arial;
+	font-size: 1em;
+	text-align: right;
+	font-style: italic;
+}
+
+div#content {
+}
+
+div.content_top {
+	display: block;
+	margin-left: -38px;
+	height: 98px;
+	width: 657px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/nav-top.png');
+}
+
+div#content_top2 {
+	display: block;
+	margin-left: -38px;
+	height: 98px;
+	width: 657px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/nav-top.png');
+}
+
+div.content_bottom {
+	display: block;
+	height: 34px;
+	width: 590px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/nav-bottom.png');
+}
+
+div.content_bottom2 {
+	display: block;
+	height: 34px;
+	width: 590px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/nav-bottom.png');
+}
+
+div#nav_top {
+	margin-top: 25px;
+	display: block;
+	height: 54px;
+	width: 270px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/leftnav-top.png');
+}
+
+div#nav_bottom {
+	display: block;
+	height: 36px;
+	width: 270px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url('http://www.raygun.org/firethistimefund/images/leftnav-bottom.png');
+}
+
+div.news {
+	width: 550px;
+	margin-top: -19px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-top: 0px;
+	background-color: #fff0e0;
+	font-style: normal;
+	font-weight: normal;
+	color: #7f530d;
+	line-height: 1.5em;
+	font-size: 0.9em;
+	font-family: Arial;
+	display: block;
+}
+
+div#news2 {
+	margin-top: -19px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-top: 0px;
+	background-color: #fff0e0;
+	font-style: normal;
+	font-weight: normal;
+	color: #6d542b;
+	line-height: 1.4em;
+	font-size: 0.9em;
+	font-family: Arial;
+	display: block;
+}
+
+div.news span.highlight {
+	color: #3b6eaf;
+	font-weight: bold;
+}
+
+span.highlight {
+		-webkit-transition: color 0.5s linear;
+}
+
+h4 {
+	border-bottom-color: #7f6233;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	display: block;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 20px;
+	word-wrap: break-word;
+	text-transform: uppercase;
+	color: #3b6eaf;
+	font-size: 1.1em;
+	font-family: m-1c-1, Arial;
+}
+
+h4 b {
+	font-weight: bold;
+	word-wrap: break-word;
+	font-family: m-1c-2, Arial;
+}
+
+h3 {
+	text-align: center;
+	font-style: normal;
+	text-transform: capitalize;
+	border-width: 0px;
+	display: block;
+	padding: 5px;
+	margin: 0px;
+	color: #646a71;
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: m-1c-1, Arial;
+}
+
+h3 a {
+	color: #ed3c2c;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+
+h3 a.current {
+	color: #7f530d !important;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+
+h3 a.current:hover { !important;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+
+h3 a:hover {
+	text-decoration: underline !important;
+}
+
+div#nav li#apply a {
+}
+
+div#nav li#apply:hover {
+	background-color: #bf4757;
+}
+
+div#nav li#apply:active {
+	background-color: #eaca37;
+}
+
+div#nav li:active {
+	background-color: #eaca37;
+}
+
+div.news a {
+	color: #f04e3b;
+	text-decoration: underline;
+}
+
+div#left a {
+	color: #f04e3b;
+	text-decoration: underline;
+}
+
+div.news a:hover {
+	text-decoration: none;
+}
+
+div#left a:hover {
+	text-decoration: none;
+}
+
+div.news a:active {
+	color: #df2b2e;
+}
+
+div#left a:active {
+	color: #df2b2e;
+}
+
+div#left p {
+	font-family: m-1c-1, Arial;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	line-height: 1.4em;
+	font-size: 0.9em;
+	color: #7f6233;
+}
+
+div#left ul {
+	font-family: m-1c-1, Arial;
+	line-height: 1.4em;
+	font-size: 0.9em;
+	color: #7f6233;
+	display: block;
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+div#left li {
+	width: 230px;
+	margin-left: -30px;
+	border-bottom-color: #7f6233;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	display: inline-block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+div.news img.img2 {
+	margin-bottom: 15px;
+	margin-top: 5px;
+	margin-right: 15px;
+	margin-left: 15px;
+	border-color: #878f98;
+	border-style: solid;
+	border-width: 2px;
+	float: left;
+	display: inline-block;
+}
+
+div#left {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	font-size: 0.8em;
+	font-family: Arial;
+	background-color: #ffe8c8;
+}
+
+div#left img {
+	padding: 0px;
+	margin: -10px;
+}
+
+.header {
+	padding-top: 10px;
+	display: block;
+}
+
+div#grantee {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-grantee-profile.png);
+}
+
+div#whoweare {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-who-we-are.png);
+}
+
+div#resources {
+	width: 550px;
+	margin-top: 10px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-resources.png);
+}
+
+div#joinourmailinglist {
+	width: 550px;
+	margin-top: 10px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-join-our-mailing-list.png);
+}
+
+div#article {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-article.png);
+}
+
+div#welcome {
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-welcome.png);
+}
+
+div#events {
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-events.png);
+}
+
+div#announcement {
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-announcement.png);
+}
+
+div#great-collaboration {
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-great-collaboration.png);
+}
+
+div#formergrantees {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-former-grantees.png);
+}
+
+div#historyandprocess {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-history-and-process.png);
+}
+
+div#vision {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-vision.png);
+}
+
+div#guidingprinciples {
+	margin-left: -10px;
+	display: inline-block;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-guiding-principles.png);
+}
+
+div#2008 {
+	margin-left: -10px;
+	display: inline-block;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-2008.png);
+}
+
+div.search {
+	height: 25px;
+	width: 254px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/bg-search.png);
+}
+
+div#currentmember {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-current-member.png);
+}
+
+div#searchresults {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-search-results.png);
+}
+
+div#formermember {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-former-members.png);
+}
+
+div#circlemembers {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-circle-members.png);
+}
+
+div#getinvolved {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-get-involved.png);
+}
+
+div#makeadonation {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-make-a-donation.png);
+}
+
+div#volunteer {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-volunteer.png);
+}
+
+div#apply {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-apply.png);
+}
+
+div#contactus {
+	margin-top: 10px;
+	height: 50px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/header-contact-us.png);
+}
+
+div#logo {
+	margin-left: -15px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-image: url(http://www.raygun.org/firethistimefund/images/ftt-logo-4.png);
+}
+
+div#navbar {
+	margin-right: auto;
+	padding-left: 0px;
+	margin-left: auto;
+	text-align: center;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+div#footer {
+	margin: 0 auto;
+	width: 950px;
+	letter-spacing: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #7f6233;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 0.7em;
+	font-family: Arial;
+	display: block;
+}
+
+#footer_top {
+	margin-top: -108px;
+	margin-left: -10px;
+	display: block;
+	height: 108px;
+	width: 985px;
+	background-image: url(http://www.raygun.org/firethistimefund/images/footer-bg.png);
+	background-repeat: no-repeat;
+}
+
+div.news p {
+	font-family: Arial;
+	padding-left: 20px;
+}
+
+div#footer a {
+	text-decoration: none;
+	color: #ed3c2c;
+}
+
+div#footer a:hover {
+	text-decoration: underline;
+}
+
+div#footer ul {
+	padding-left: 10px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+	margin: 0px;
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+div#footer li {
+	line-height: 1.5em;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	margin: 0px;
+	display: block;
+}
+
+h5 {
+	font-style: italic;
+	color: #7f6233;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+fieldset {
+	border-width: 0px;
+}
+
+#comments input {
+	letter-spacing: 1px;
+	color: #7f530d;
+	background-color: #e5d6bd;
+	font-style: italic;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-family: Georgia;
+	border-width: 0px;
+	padding: 5px;
+}
+
+#comments label {
+	font-weight: bold;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+#comments textarea {
+	letter-spacing: 0.5px;
+	color: #7f530d;
+	background-color: #d7c9b0;
+	font-size: 1.1em;
+	font-family: Georgia;
+	padding: 5px;
+	width: 100%;
+	height: 150px;
+	border-width: 0px;
+}
+
+#comments dt {
+	text-transform: uppercase;
+	color: #00439d;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 0.9em;
+}
+
+#comments dl {
+	border-bottom-color: #e5d6bd;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	padding: 10px;
+	display: block;
+}
+
+#comments dd {
+	margin: 0px;
+	line-height: 1.4em;
+}
+
+#comments dt em {
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	font-style: normal;
+	font-weight: normal;
+	display: inline-block;
+}
+
+div.left {
+	clear: left;
+	float: left;
+	display: inline-block;
+	width: 250px;
+}
+
+div.right {
+	display: inline-block;
+	float: right;
+	width: 250px;
+}
+
+div.article {
+}
+
+a.icon {
+	text-decoration: none !important;
+	position: relative;
+	font-size: 0.9em;
+	display: inline-block;
+}
+
+a.icon:hover {
+	text-decoration: underline !important;
+}
+
+dd.search-box {
+	padding: 0px;
+	margin: 0px;
+}
+
+dd.search-box input.search {
+	line-height: 1.1em;
+	font-size: 1.2em;
+	font-style: italic;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #ffff99;
+	background-image: url('http://www.raygun.org/firethistimefund/images/bg-input.png') !important;
+	background-repeat: repeat-x;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-top: 7px;
+	position: relative;
+	width: 150px;
+	margin-left: 60px;
+	margin-right: 0px;
+	border-width: 0px;
+	background-color: #eb503e;
+}
+
+dd.search-box input.search-body {
+	line-height: 1.1em;
+	font-size: 0.9em;
+	font-style: italic;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #ffff99;
+	background-image: url('http://www.raygun.org/firethistimefund/images/bg-input.png') !important;
+	background-repeat: repeat-x;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-top: 7px;
+	position: relative;
+	width: 150px;
+	margin-left: 60px;
+	margin-right: 0px;
+	border-width: 0px;
+	background-color: #eb503e;
+}
+
+dd.search-box input.go {
+	border-width: 0px;
+	display: inline-block;
+	float: right;
+	height: 25px;
+	width: 33px;
+	background-image: url('http://www.raygun.org/firethistimefund/images/button-go.png');
+	background-repeat: no-repeat;
+}
+
+dd.search-box input.go:hover {
+	cursor: pointer;
+}
+
+h3.nav {
+	font-family: m-1c-1, Arial;
+	margin-top: -35px;
+	float: right;
+	display: inline-block;
+}
+
+.deadline {
+	font-weight: bold;
+	color: #ed3c2c;
+}
+
+input.donate {
+	margin-left: -10px;
+	display: inline-block;
+}
+
+h2#title p strong {
+	color: #3b6eaf;
+}
+
+div#left li strong {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+div.anothersearch {
+	float: right;
+	display: block;
+}
+
+div.participant {
+	border-bottom-color: #dda868;
+	border-bottom-style: dashed;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 500px;
+	border-bottom-width: 1px;
+}
+
+.project-thumb {
+	float: left;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+}
+

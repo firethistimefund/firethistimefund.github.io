@@ -1,0 +1,62 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Example Custom CSS : DinoMaster!
+ Author : Infinity Box Inc.
+ URL : http://wufoo.com
+
+ Last Updated : September 26, 2007
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - Default - - - */
+
+/* Logo */
+h1 a { min-height:0; height:40px}
+
+/* Backgrounds */
+body{background-color: #fff0e0; background-image:none;}
+h1{visibility: hidden; display: block; color: #ffff99; background-image:none;background-color: #ed3c2c}
+#container{background-color: #fff0e0; border: 0;}
+.wufoo textarea.textarea{ font-size: 1.1em; font-family: Georgia; width: 90%; border-color: #6f4548; border-style: solid; border-width: 2px; background:#FFFFFF top}
+.wufoo input.text { font-family: Georgia; color: #7f6233; text-transform: uppercase; padding: 5px; border-color: #6f4548; border-style: solid; border-width: 2px; background:#FFFFFF top }
+.wufoo textarea.medium {font-family: Georgia; padding: 10px;}
+.wufoo input.field { font-family: Georgia; background-position: center; position: relative; display: inline-block; margin-right: -5px; padding: 5px;}
+.wufoo .focused{ background-color: #ed3c2c; background-repeat: repeat; display: inline-block; color: white;}
+.wufoo .instruct{color: #ff3e3d;}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{ display: none; border-bottom-style: none;}
+.wufoo .info div{ color: #6f4548; font-style: italic; font-size: 0.9em; visibility: hidden;}
+.wufoo .section{ border-top: dotted}
+.wufoo .section div{ color: #6f4548; font-style: italic; font-family: Arial; font-size: 1em;}
+.wufoo .instruct{ border-style: solid; border-color: #7f6233;}
+
+/* Typography */
+.wufoo .info h2{ float: left; text-align: left; padding-bottom: 10px; display: inline-block; font-size: 1.6em;font-family: Georgia;color: #6f4548}
+.wufoo .info p{font-size:95%;font-family:inherit;color: #6f4548}
+.wufoo .section h3{ visibility: hidden; font-size: 1.3em;font-family: Arial;color: #ff3e3d}
+.wufoo .section p{font-size:85%;font-family:inherit;color: #6f4548}
+.wufoo label.desc{ letter-spacing: 1px; text-transform: uppercase; line-height: 1em; font-style: italic !important; font-size: 1em;font-family: Helvetica;color: #ff3e3d}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color: #6f4548}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{ line-height: 1.3em; font-size: 1em;font-family: Georgia;color: #6f4548}
+.wufoo label.choice{color: #6f4548}
+.wufoo .instruct{ font-family: Arial; padding: 15px; line-height: 1.3em; font-size: 1em;color: #7f530d
+}
+
+/* Drop Shadows */
+#top, #bottom{visibility: hidden}
+li.buttons input.button{ background-image: url('http://www.raygun.org/images/send.png'); }
+li.complex{ width: 345px; }
+img#bottom{ display: none; }
+body#public{ border-width: 0px; }
+
+input .text.large { width: 400px !important;}
